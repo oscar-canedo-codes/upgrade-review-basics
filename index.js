@@ -177,3 +177,15 @@ const users = [
     "Mosquito"
   );
   console.log(index2);
+
+  // Iteration 5
+
+  /* Crea una función llamada rollDice() que reciba como parametro el numero de caras que queramos que tenga el dado que deberá silumar el codigo dentro de la función.Busca información sobre la función de javascript Math.random();*/ 
+
+  function rollDice(maxNum) {
+    return Math.floor(Math.random() * (maxNum - 1) + 1);
+  }
+  
+  console.log(rollDice(8));
+  console.log(rollDice(15));
+  console.log(rollDice(9));
