@@ -189,3 +189,20 @@ const users = [
   console.log(rollDice(8));
   console.log(rollDice(15));
   console.log(rollDice(9));
+
+  // Iteration 6
+
+  /* Crea una función llamada swap() que reciba un array y dos parametros que sean indices del array. La función deberá intercambiar la posición de los valores de los indices que hayamos enviado como parametro. Retorna el array resultante. */
+
+function swap(array, firstIndex, secondIndex){
+    
+    const firstElement = array[firstIndex];
+    array[firstIndex] = array[secondIndex];
+    array[secondIndex] = firstElement;
+
+    return array;
+}
+
+const newArray = swap(['Violet Chacki', 'Bob the Drag Queen', 'Jaida Essence Hall', 'Tammie Brown', 'Trixie Mattel'], 1, 4)
+
+console.log(newArray);
